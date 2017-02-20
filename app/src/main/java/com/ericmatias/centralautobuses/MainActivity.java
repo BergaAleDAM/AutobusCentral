@@ -30,6 +30,11 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+/**
+ * Activity Principal.
+ * Lluis, en aquesta aplicacio, al igual que en la Client, hem utilitzat el metode antic per poder localitzar els autobuses
+ * Sabem que esta deprecated, pero com ja t'ho vam comentar a clase t'ho tornem a dir per si de cas perque ho recordis el perque ho vam fer aixi.
+ */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button btnVariosBuses, btnUnBus;

@@ -10,6 +10,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
@@ -95,7 +96,7 @@ public class MapsActivityTodosBuses extends FragmentActivity implements OnMapRea
             if (result) {
                 Toast.makeText(MapsActivityTodosBuses.this, "Correcto", Toast.LENGTH_SHORT).show();
                 for (int i = 0; i < arrayPosiciones.length; i++) {
-                    mMap.addMarker(new MarkerOptions().position(arrayPosiciones[i]).title(matricula[i]).snippet(data[i]));
+                    mMap.addMarker(new MarkerOptions().position(arrayPosiciones[i]).title(matricula[i]).snippet(data[i]).icon(BitmapDescriptorFactory.fromResource(R.drawable.pruebabuscopia)));
 
                 }
             } else {
